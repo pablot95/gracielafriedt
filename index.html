@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graciela Friedt — Coach & Psicóloga</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <clipPath id="wavyLeft" clipPathUnits="objectBoundingBox">
+                <path d="M 0.03 0
+                         C 0.03 0.04, 0.008 0.12, 0.008 0.28
+                         C 0.012 0.42, 0.052 0.5, 0.052 0.62
+                         C 0.052 0.76, 0.008 0.86, 0.03 1
+                         L 1 1 L 1 0 Z"/>
+            </clipPath>
+        </defs>
+    </svg>
+
+    <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#inicio" class="nav-logo">
+                <img src="images/logo.png" alt="Graciela Friedt Logo">
+                <span class="nav-brand-text">
+                    <span class="nav-brand-name">Graciela Friedt</span>
+                    <span class="nav-brand-role">COACH &amp; PSICÓLOGA</span>
+                </span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#talleres" class="nav-link">Talleres</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <a href="#contacto" class="btn-rose nav-cta">Agendá tu sesión</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════ HERO ═══════════════════════ -->
+    <section class="hero" id="inicio">
+        <!-- Columna izquierda: texto -->
+        <div class="hero-left">
+            <div class="hero-botanical--left">
+                <svg viewBox="0 0 120 500" fill="none" xmlns="http://www.w3.org/2000/svg" width="120" height="100%">
+                    <path d="M60 480 Q30 380 45 280 Q60 180 30 60" stroke="#C4607A" stroke-width="1.5" fill="none" opacity="0.25"/>
+                    <ellipse cx="28" cy="110" rx="28" ry="13" transform="rotate(-30 28 110)" fill="#C4607A" opacity="0.13"/>
+                    <ellipse cx="50" cy="170" rx="26" ry="12" transform="rotate(20 50 170)" fill="#7A9E8A" opacity="0.13"/>
+                    <ellipse cx="22" cy="240" rx="30" ry="13" transform="rotate(-15 22 240)" fill="#C4607A" opacity="0.11"/>
+                    <ellipse cx="48" cy="310" rx="24" ry="11" transform="rotate(25 48 310)" fill="#7A9E8A" opacity="0.11"/>
+                    <ellipse cx="20" cy="380" rx="22" ry="10" transform="rotate(-10 20 380)" fill="#C4607A" opacity="0.09"/>
+                </svg>
+            </div>
+            <img src="images/asset-hero.png" alt="" class="hero-asset-left" aria-hidden="true">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Transformá tu comunicación,<br>
+                    transformá <em class="script-rose">tu vida</em>
+                </h1>
+                <img src="images/divisor.png" alt="" class="divider divider-hero" aria-hidden="true">
+                <p class="hero-subtitle">
+                    Te acompaño a desarrollar tus habilidades, gestionar tus emociones y potenciar tu liderazgo para que vivas con más claridad, confianza y propósito.
+                </p>
+                <a href="#contacto" class="btn-rose">Agendá tu sesión</a>
+            </div>
+        </div>
+        <!-- Columna derecha: imagen full height -->
+        <div class="hero-right">
+            <img src="./images/hero2.jpeg" alt="Graciela Friedt Coaching" class="hero-image">
+        </div>
+    </section>
+
+    <!-- ═══════════════════════ ESPECIALIDADES ═══════════════════════ -->
+    <section class="especialidades" id="especialidades">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title">Mis especialidades</h2>
+                <img src="images/divisor.png" alt="" class="divider divider-centered" aria-hidden="true">
+            </div>
+            <div class="cards-grid four">
+                <div class="spec-card">
+                    <div class="spec-icon rose">
+                        <img src="images/comunicacion-asertiva.png" alt="" aria-hidden="true">
+                    </div>
+                    <h3>Comunicación Asertiva</h3>
+                    <p>Mejorá tus relaciones, exprésate con claridad y construí vínculos más auténticos y efectivos.</p>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-icon sage">
+                        <img src="images/gestion-de-emociones.png" alt="" aria-hidden="true">
+                    </div>
+                    <h3>Gestión de Emociones</h3>
+                    <p>Aprendé a gestionar tus emociones y transformar los desafíos en oportunidades de crecimiento.</p>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-icon rose">
+                        <img src="images/liderazgo.png" alt="" aria-hidden="true">
+                    </div>
+                    <h3>Liderazgo</h3>
+                    <p>Potenciá tu liderazgo, inspirá a otros y guiá equipos hacia resultados extraordinarios.</p>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-icon sage">
+                        <img src="images/pnl.png" alt="" aria-hidden="true">
+                    </div>
+                    <h3>PNL & Coaching</h3>
+                    <p>Herramientas de PNL y coaching para reprogramar tu mente y alcanzar tus objetivos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════ SOBRE MÍ ═══════════════════════ -->
+    <section class="sobre-mi" id="sobre-mi">
+        <div class="sobre-mi-container">
+            <div class="sobre-mi-image">
+                <img src="./images/sobremi2.jpeg" alt="Graciela Friedt">
+            </div>
+            <div class="sobre-mi-text">
+                <p class="label-small">Sobre mí</p>
+                <img src="images/divisor.png" alt="" class="divider divider-left" aria-hidden="true">
+                <h2 class="sobre-mi-name script-rose">Soy Graciela Friedt,</h2>
+                <h3 class="sobre-mi-role">Psicóloga Social, Coach Holística & Trainer</h3>
+                <p class="sobre-mi-desc">Acompaño a personas y organizaciones a desarrollar su máximo potencial a través de procesos de coaching, comunicación y desarrollo personal.</p>
+                <p class="sobre-mi-desc">Con más de 20 años de experiencia en el ámbito clínico, educativo y empresarial, integro herramientas de la psicología, el coaching y la PNL para generar transformaciones profundas y sostenibles.</p>
+                <p class="sobre-mi-desc">Mi misión es ayudarte a descubrir tu mejor versión y vivir una vida más plena, consciente y en coherencia con tus valores.</p>
+                <div class="sobre-mi-quote">
+                    <span class="quote-ornament">&ldquo;</span>
+                    <blockquote class="quote-text">Evitemos limitar nuestros desafíos.<br>Más bien, desafiemos nuestros propios límites.</blockquote>
+                    <span class="quote-ornament">&rdquo;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════ SERVICIOS ═══════════════════════ -->
+    <section class="servicios" id="servicios">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title">Servicios y programas</h2>
+                <img src="images/divisor.png" alt="" class="divider divider-centered" aria-hidden="true">
+            </div>
+            <div class="cards-grid three">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="./images/sesionesind.jpeg" alt="Sesiones individuales">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-info">
+                            <h3>Sesiones individuales</h3>
+                            <p>Un espacio personalizado para trabajar tus objetivos, superar bloqueos y alcanzar el bienestar que buscás.</p>
+                        </div>
+                        <div class="service-icon rose">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="./images/capacitaciones.jpeg" alt="Talleres grupales">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-info">
+                            <h3>Talleres grupales</h3>
+                            <p>Experiencias transformadoras en grupo para desarrollar habilidades, compartir y crecer junto a otros.</p>
+                        </div>
+                        <div class="service-icon sage">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=500&q=80" alt="Capacitaciones corporativas">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-info">
+                            <h3>Capacitaciones corporativas</h3>
+                            <p>Programas a medida para empresas que buscan potenciar el talento, la comunicación y el liderazgo.</p>
+                        </div>
+                        <div class="service-icon rose">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════ TESTIMONIOS ═══════════════════════ -->
+    <section class="testimonios" id="talleres">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title">Lo que dicen mis clientes</h2>
+                <div class="title-deco"></div>
+            </div>
+            <div class="cards-grid three">
+                <div class="testi-card">
+                    <span class="quote-mark">&ldquo;</span>
+                    <p>"Graciela me ayudó a comunicarme mejor, a poner límites y a confiar en mí. Mi vida cambió por completo."</p>
+                    <strong>María L.</strong>
+                </div>
+                <div class="testi-card">
+                    <span class="quote-mark">&ldquo;</span>
+                    <p>"Sus talleres son transformadores. Aprendí herramientas prácticas que aplico todos los días."</p>
+                    <strong>Carolina R.</strong>
+                </div>
+                <div class="testi-card">
+                    <span class="quote-mark">&ldquo;</span>
+                    <p>"Gracias a su acompañamiento, logré liderar mi equipo con más claridad y empatía. Altamente recomendable."</p>
+                    <strong>Lucía P.</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════ CTA BANNER ═══════════════════════ -->
+    <section class="cta-banner">
+        <div class="cta-botanical cta-botanical--left">
+            <svg viewBox="0 0 160 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M80 280 Q40 200 60 120 Q80 40 40 10" stroke="white" stroke-width="1.5" fill="none" opacity="0.3"/>
+                <ellipse cx="35" cy="80" rx="28" ry="13" transform="rotate(-25 35 80)" fill="white" opacity="0.15"/>
+                <ellipse cx="60" cy="150" rx="25" ry="12" transform="rotate(20 60 150)" fill="white" opacity="0.12"/>
+                <ellipse cx="30" cy="210" rx="30" ry="13" transform="rotate(-10 30 210)" fill="white" opacity="0.1"/>
+            </svg>
+        </div>
+        <div class="container cta-container">
+            <div class="cta-text">
+                <h2>¿Lista para el cambio?</h2>
+                <p>Demos el primer paso juntas hacia tu mejor versión.</p>
+            </div>
+            <div class="cta-cta-wrap">
+                <a href="#contacto" class="btn-white">Agendá tu sesión</a>
+                <img src="images/maceta.png" alt="" class="cta-maceta" aria-hidden="true">
+            </div>
+        </div>
+        <div class="cta-botanical cta-botanical--right">
+            <svg viewBox="0 0 160 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M80 20 Q120 100 100 180 Q80 260 120 290" stroke="white" stroke-width="1.5" fill="none" opacity="0.3"/>
+                <ellipse cx="125" cy="80" rx="28" ry="13" transform="rotate(25 125 80)" fill="white" opacity="0.15"/>
+                <ellipse cx="100" cy="160" rx="25" ry="12" transform="rotate(-20 100 160)" fill="white" opacity="0.12"/>
+                <ellipse cx="130" cy="230" rx="26" ry="12" transform="rotate(10 130 230)" fill="white" opacity="0.1"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════ CONTACTO ═══════════════════════ -->
+    <section class="contacto" id="contacto">
+        <img src="images/macetacontacto.png" alt="" class="contacto-maceta-deco" aria-hidden="true">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title" style ="color: black;">Hablemos</h2>
+                <div class="title-deco"></div>
+            </div>
+        </div>
+        <div class="container contacto-container">
+            <div class="contacto-info">
+                <p class="contacto-desc">Estoy aquí para acompañarte.<br>Escribime y agendemos una sesión<br>o una entrevista de camino juntas.</p>
+                <ul class="contacto-list">
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.79 19.79 0 0 1 1.62 4.53 2 2 0 0 1 3.6 2.36h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l.94-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
+                        +54 11 1234 5678
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        hola@gracielafriedt.com
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Buenos Aires, Argentina
+                    </li>
+                </ul>
+            </div>
+            <form class="contacto-form" id="contactForm">
+                <div class="form-row two">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <input type="text" placeholder="Asunto" required>
+                <textarea placeholder="Mensaje" rows="5" required></textarea>
+                <button type="submit" class="btn-rose full">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="Graciela Friedt" class="footer-logo">
+                <p>Acompaño procesos de transformación personal y organizacional para crear vidas y equipos más conscientes, comunicados y exitosos.</p>
+            </div>
+            <div class="footer-social">
+                <p class="footer-social-title">Seguime</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Graciela Friedt. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
