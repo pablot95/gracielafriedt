@@ -950,3 +950,64 @@ ul  { list-style: none; }
     .footer-container { flex-direction: column; gap: 2rem; }
     .cta-text h2      { font-size: 1.5rem; }
 }
+
+/* ══════════════════════════════════════════
+   ANIMACIONES DE ENTRADA
+══════════════════════════════════════════ */
+@keyframes anim-fade-up {
+    from { opacity: 0; transform: translateY(36px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes anim-fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes anim-slide-down {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Navbar */
+.navbar { animation: anim-slide-down 0.5s cubic-bezier(0.22,1,0.36,1) both; }
+
+/* Hero — secuencia de carga */
+.hero-title                { animation: anim-fade-up 0.8s cubic-bezier(0.22,1,0.36,1) 0.15s both; }
+.divider-hero              { animation: anim-fade-in 0.6s ease 0.4s both; }
+.hero-subtitle             { animation: anim-fade-up 0.7s cubic-bezier(0.22,1,0.36,1) 0.5s both; }
+.hero-text .btn-rose       { animation: anim-fade-up 0.65s cubic-bezier(0.22,1,0.36,1) 0.65s both; }
+.hero-right                { animation: anim-fade-in 1s ease 0.1s both; }
+.hero-asset-left           { animation: anim-fade-up 0.9s ease 0.45s both; }
+
+/* ── Scroll reveal — estado inicial ── */
+.reveal {
+    opacity: 0;
+    transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1),
+                transform 0.65s cubic-bezier(0.22,1,0.36,1);
+}
+.reveal[data-anim="up"]    { transform: translateY(32px); }
+.reveal[data-anim="left"]  { transform: translateX(-36px); }
+.reveal[data-anim="right"] { transform: translateX(36px); }
+.reveal[data-anim="fade"]  { transform: none; }
+.reveal[data-anim="scale"] { transform: scale(0.93); }
+
+/* Estado final — activado por JS */
+.reveal.visible {
+    opacity: 1;
+    transform: none !important;
+}
+
+/* Reduced motion — desactiva todas las animaciones */
+@media (prefers-reduced-motion: reduce) {
+    .navbar,
+    .hero-title, .divider-hero, .hero-subtitle,
+    .hero-text .btn-rose, .hero-right, .hero-asset-left {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+}

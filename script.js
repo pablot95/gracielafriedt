@@ -40,20 +40,47 @@ if (form) {
     });
 }
 
-// ── Scroll reveal ─────────────────────────────────────
-const observer = new IntersectionObserver((entries) => {
+// ── Animaciones de entrada al hacer scroll ────────────
+const revealObs = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-            observer.unobserve(entry.target);
+            const el = entry.target;
+            if (el.dataset.delay) el.style.transitionDelay = el.dataset.delay + 'ms';
+            el.classList.add('visible');
+            revealObs.unobserve(el);
         }
     });
-}, { threshold: 0.1 });
+}, { threshold: 0.12 });
 
-document.querySelectorAll('.spec-card, .service-card, .testi-card').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(24px)';
-    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    observer.observe(el);
-});
+function reveal(selector, anim, stagger) {
+    document.querySelectorAll(selector).forEach((el, i) => {
+        el.classList.add('reveal');
+        el.dataset.anim = anim;
+        if (stagger && i > 0) el.dataset.delay = i * stagger;
+        revealObs.observe(el);
+    });
+}
+
+// Encabezados de sección
+reveal('.especialidades .section-header, .servicios .section-header, .testimonios .section-header, .contacto .section-header', 'up');
+
+// Tarjetas con efecto escalonado
+reveal('.spec-card',    'up',    100);
+reveal('.service-card', 'up',    120);
+reveal('.testi-card',   'up',    120);
+
+// Sección Sobre Mí
+reveal('.sobre-mi-image', 'left');
+reveal('.sobre-mi-text',  'right');
+
+// CTA banner
+reveal('.cta-text',     'left');
+reveal('.cta-cta-wrap', 'right');
+
+// Contacto
+reveal('.contacto-info', 'left');
+reveal('.contacto-form', 'right');
+
+// Footer
+reveal('.footer-brand',  'up');
+reveal('.footer-social', 'fade');
