@@ -84,3 +84,46 @@ reveal('.contacto-form', 'right');
 // Footer
 reveal('.footer-brand',  'up');
 reveal('.footer-social', 'fade');
+
+// ── Modales / Pop-ups ──────────────────────────────────
+const modals = document.querySelectorAll('.modal');
+const serviceCards = document.querySelectorAll('.service-card.clickable');
+
+// Abrir modal al hacer click en una card de servicio
+serviceCards.forEach(card => {
+    card.addEventListener('click', () => {
+        const popupId = card.dataset.popup;
+        const modal = document.getElementById(`modal-${popupId}`);
+        if (modal) {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    });
+});
+
+// Cerrar modal
+function closeModal(modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+modals.forEach(modal => {
+    // Cerrar al hacer click en el overlay
+    const overlay = modal.querySelector('.modal-overlay');
+    if (overlay) {
+        overlay.addEventListener('click', () => closeModal(modal));
+    }
+    
+    // Cerrar al hacer click en el botón de cerrar
+    const closeBtn = modal.querySelector('.modal-close');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => closeModal(modal));
+    }
+    
+    // Cerrar con la tecla Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal(modal);
+        }
+    });
+});

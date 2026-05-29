@@ -150,52 +150,161 @@
                 <h2 class="section-title">Servicios y programas</h2>
                 <img src="images/divisor.png" alt="" class="divider divider-centered" aria-hidden="true">
             </div>
-            <div class="cards-grid three">
-                <div class="service-card">
+            <div class="cards-grid four">
+                <!-- 1. MI MISIÓN -->
+                <div class="service-card clickable" data-popup="mision">
                     <div class="service-img">
-                        <img src="./images/sesionesind.jpeg" alt="Sesiones individuales">
+                        <img src="./images/mimision.jpeg" alt="Mi Misión">
                     </div>
                     <div class="service-body">
                         <div class="service-info">
-                            <h3>Sesiones individuales</h3>
-                            <p>Un espacio personalizado para trabajar tus objetivos, superar bloqueos y alcanzar el bienestar que buscás.</p>
+                            <h3>Mi Misión</h3>
+                            <p>Descubrí el enfoque y los valores que guían mi trabajo.</p>
                         </div>
                         <div class="service-icon rose">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
                         </div>
                     </div>
                 </div>
-                <div class="service-card">
+
+                <!-- 2. TALLERES GRUPALES -->
+                <div class="service-card clickable" data-popup="talleres">
                     <div class="service-img">
-                        <img src="./images/capacitaciones.jpeg" alt="Talleres grupales">
+                        <img src="./images/capacitaciones.jpeg" alt="Talleres Grupales">
                     </div>
                     <div class="service-body">
                         <div class="service-info">
-                            <h3>Talleres grupales</h3>
-                            <p>Experiencias transformadoras en grupo para desarrollar habilidades, compartir y crecer junto a otros.</p>
+                            <h3>Talleres Grupales</h3>
+                            <p>El Trazo Emocional</p>
                         </div>
                         <div class="service-icon sage">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
                         </div>
                     </div>
                 </div>
-                <div class="service-card">
+
+                <!-- 3. SESIONES INDIVIDUALES -->
+                <div class="service-card clickable" data-popup="sesiones">
                     <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=500&q=80" alt="Capacitaciones corporativas">
+                        <img src="./images/sesionesind.jpeg" alt="Sesiones Individuales">
                     </div>
                     <div class="service-body">
                         <div class="service-info">
-                            <h3>Capacitaciones corporativas</h3>
-                            <p>Programas a medida para empresas que buscan potenciar el talento, la comunicación y el liderazgo.</p>
+                            <h3>Sesiones Individuales</h3>
+                            <p>Entrevistas, Mentorías y Coaching personalizado.</p>
                         </div>
                         <div class="service-icon rose">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="8" r="4"/>
+                                <path d="M6 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. CAPACITACIONES CORPORATIVAS -->
+                <div class="service-card clickable" data-popup="corporativas">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=500&q=80" alt="Capacitaciones Corporativas">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-info">
+                            <h3>Capacitaciones Corporativas</h3>
+                            <p>Comunicación Asertiva y Liderazgo para equipos.</p>
+                        </div>
+                        <div class="service-icon sage">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="7" width="20" height="14" rx="2"/>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                            </svg>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- ═══════════════════════ MODALES/POP-UPS ═══════════════════════ -->
+    <!-- Modal: Mi Misión -->
+    <div class="modal" id="modal-mision">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3>Mi Misión</h3>
+            <img src="images/divisor.png" alt="" class="divider divider-centered" aria-hidden="true">
+            <p class="modal-text">Mi misión es ayudarte a descubrir tu poder esencial, potenciar tus talentos y acompañarte a desarrollar tu mejor versión para vivir una vida más plena, consciente y en coherencia con tus valores.</p>
+        </div>
+    </div>
+
+    <!-- Modal: Talleres Grupales -->
+    <div class="modal" id="modal-talleres">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3>El Trazo Emocional</h3>
+            <img src="images/divisor.png" alt="" class="divider divider-centered" aria-hidden="true">
+            <p class="modal-text modal-quote">Cuando las palabras no alcanzan, el arte comunica.</p>
+        </div>
+    </div>
+
+    <!-- Modal: Sesiones Individuales -->
+    <div class="modal" id="modal-sesiones">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-wide">
+            <button class="modal-close">&times;</button>
+            <h3>Sesiones Individuales</h3>
+            <img src="images/divisor.png" alt="" class="divider divider-centered" aria-hidden="true">
+            
+            <div class="modal-two-blocks">
+                <!-- Bloque 1: Entrevistas y Mentorías -->
+                <div class="modal-block">
+                    <h4>Entrevistas y Mentorías</h4>
+                    <p class="modal-quote">Diagnóstico y encuadre. Estrategia y herramientas. Plan de acción.</p>
+                </div>
+
+                <!-- Bloque 2: Coaching -->
+                <div class="modal-block">
+                    <h4>Coaching (Acortando brechas)</h4>
+                    <div class="modal-section">
+                        <p><strong>Especialidades:</strong></p>
+                        <p>Personal, Profesional, Ejecutivo, Para Emprender y Escénico.</p>
+                    </div>
+                    <div class="modal-section">
+                        <p><strong>Formatos de procesos:</strong></p>
+                        <p>4 sesiones de 2 horas o proceso de 3 meses con frecuencia semanal de 2 horas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Capacitaciones Corporativas -->
+    <div class="modal" id="modal-corporativas">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3>Capacitaciones Corporativas</h3>
+            <img src="images/divisor.png" alt="" class="divider divider-centered" aria-hidden="true">
+            
+            <div class="modal-section">
+                <p><strong>Ejes principales:</strong></p>
+                <p>Comunicación Asertiva y Liderazgo.</p>
+            </div>
+            
+            <div class="modal-section">
+                <p><strong>Menú de especialidades:</strong></p>
+                <p class="modal-text">Fusión y gestión del cambio. Gestión comercial. Liderazgo lateral. Comunicación asertiva.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- ═══════════════════════ TESTIMONIOS ═══════════════════════ -->
     <section class="testimonios" id="talleres">
